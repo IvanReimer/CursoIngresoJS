@@ -1,6 +1,5 @@
 function Mostrar()
 {
-
 	var contador=0;
 	// declarar variables
 	var numeroMaximo;
@@ -8,23 +7,31 @@ function Mostrar()
 	var respuesta='si';
 	var numero;
 	while(respuesta!='no')
-	{
-		contador++
+	{		
 		numero=prompt("Ingrese numero");
-			if(numero>=contador)
+			if(contador==0)
 			{
-				numeroMaximo==numero;
-			}//fin primer if
+				numeroMaximo=numero;
+				numeroMinimo=numero;
+				contador++;
+			}
 			else
 			{
-				if(numero<contador)
+				if(numero>=numeroMaximo)
 				{
-					numeroMinimo==numero;
-				}//fin segundo if
+					numeroMaximo=numero;
+				}//fin primer if
 				else
 				{
-				}//fin segundo else
-			}//fin 1er else
+					if(numero<=numeroMinimo)
+					{
+						numeroMinimo=numero;
+					}
+					else
+					{
+					}
+				}//fin 1er else
+			}
 		respuesta=prompt("Desea continuar?","no");
 	}
 document.getElementById('maximo').value=numeroMaximo;
