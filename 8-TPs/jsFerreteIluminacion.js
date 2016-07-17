@@ -14,35 +14,9 @@ var cantidad=document.getElementById('Cantidad').value;
 var marca=document.getElementById('Marca').value;
 var precioBruto=cantidad*35;
 var descuento;
-/*if(cantidad>=6)
-{
-	document.getElementById('precioDescuento').value=precio-precio*0.5;
-}
-else
-{	
-	if(cantidad==5)
-	{
-			if(marca=="ArgentinaLuz")
-			{
-				document.getElementById('precioDescuento').value=precio-precio*0.4;
-			}
-			else
-			{
-				document.getElementById('precioDescuento').value=precio-precio*0.3;
-			}
-	}
-	if(cantidad==4)
-	{
-		if(marca=="ArgentinaLuz")
-		{
-			document.getElementById('precioDescuento').value=precio-precio*0.2;
-		}
-	}
-}
-*/
 switch(marca)
 {
-	case "ArgentinaLuz":
+	case "ArgentinaLuz":	
 		if(cantidad==3)
 		{			
 			descuento=0.85;		
@@ -65,7 +39,7 @@ switch(marca)
 				}
 			}
 		}
-		break;
+		break;	
 	case "“FelipeLamparas”":
 		if(cantidad==3)
 		{
@@ -75,7 +49,7 @@ switch(marca)
 		{
 			if(cantidad==4)
 			{
-				descuento=0.75
+				descuento=0.75;
 			}
 			else
 			{
@@ -91,15 +65,47 @@ switch(marca)
 		}
 		break;
 	case "JeLuz":
+	case "HazIluminacion":
+	case "Osram":
 	if(cantidad==3)
 	{
-		
+		descuento=0.95;
 	}
+	else
+	{
+		if(cantidad==4)
+		{
+			descuento=0.80;
+		}
+		else
+		{
+			if(cantidad==5)
+			{
+				descuento=0.70;
+			}
+			else
+			{
+				descuento=0.50;
+			}
+		}
+	}
+	break;
+}//switch(marca)
 var precioNeto=precioBruto*descuento;
-document.getElementById('precioDescuento').value=precioNeto;	
+if(precioNeto>120)
+{
+	precioNeto=parseInt(precioNeto)+parseInt(precioNeto*0.10);
+	document.getElementById('precioDescuento').value=precioNeto;
+	alert("Se le agrega el impuesto: "+parseInt(precioNeto*0.10));
+}
+else
+{
+	document.getElementById('precioDescuento').value=precioNeto;
+}
+	
 
 	
 
-}//switch(marca)
+
 
 }//function CalcularPrecio ()

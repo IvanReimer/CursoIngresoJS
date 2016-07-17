@@ -4,7 +4,7 @@ function Mostrar()
 	var contador=0;
 	var acumulador=0;
 	var respuesta='si';
-while()
+while(respuesta=!'si')
 {
 	contador++;
 	contador=prompt("Ingrese numero");
