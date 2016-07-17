@@ -11,20 +11,20 @@ function Mostrar()
 	{
 		contador++
 		numero=prompt("Ingrese numero");
-		if(numero>=numeroMaximo)
-		{
-			numeroMaximo==numero;
-		}//fin primer if
-		else
-		{
-			if(numero<numeroMinimo)
+			if(numero>=contador)
 			{
-				numeroMinimo==numero;
-			}//fin segundo if
+				numeroMaximo==numero;
+			}//fin primer if
 			else
 			{
-			}//fin segundo else
-		}//fin 1er else
+				if(numero<contador)
+				{
+					numeroMinimo==numero;
+				}//fin segundo if
+				else
+				{
+				}//fin segundo else
+			}//fin 1er else
 		respuesta=prompt("Desea continuar?","no");
 	}
 document.getElementById('maximo').value=numeroMaximo;
