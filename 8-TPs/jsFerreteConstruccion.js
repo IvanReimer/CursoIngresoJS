@@ -14,7 +14,8 @@ function Rectangulo ()
 	anchoTerreno=document.getElementById('Ancho').value;
 	radioTerreno=document.getElementById('Radio').value;
 	resultado=((parseInt(largoTerreno)*2)+(parseInt(anchoTerreno)*2)*3);
-}	alert("Se deben comprar: "+resultado+" cantidades de alambre para alambrar el terreno con tres hilos");
+	alert("Se deben comprar: "+resultado+" cantidades de alambre para alambrar el terreno con tres hilos");
+}
 function Circulo () 
 {
 	var largoTerreno;
