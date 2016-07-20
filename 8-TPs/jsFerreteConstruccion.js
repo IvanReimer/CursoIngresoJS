@@ -5,7 +5,7 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 */
 
 function Rectangulo () 
-{
+{//calcula el triple del perimetro del rectangulo.
 	var largoTerreno;
 	var achoTerreno;
 	var radioTerreno;
@@ -15,9 +15,9 @@ function Rectangulo ()
 	radioTerreno=document.getElementById('Radio').value;
 	resultado=((parseInt(largoTerreno)*2)+(parseInt(anchoTerreno)*2)*3);
 	alert("Se deben comprar: "+resultado+" cantidades de alambre para alambrar el terreno con tres hilos");
-}
+}//fin funcion rectangulo.
 function Circulo () 
-{
+{//calcula el triple del perimetro del circulo.
 	var largoTerreno;
 	var achoTerreno;
 	var radioTerreno;
@@ -25,11 +25,11 @@ function Circulo ()
 	largoTerreno=document.getElementById('Largo').value;
 	anchoTerreno=document.getElementById('Ancho').value;
 	radioTerreno=document.getElementById('Radio').value;
-	resultado=parseInt(radioTerreno)*2*3.14;
+	resultado=parseInt(radioTerreno)*2*3.14*3;
 	alert("Se deben comprar "+resultado+" cantidades de alambre para alambrar el terreno circular con tres hilos");
-}
+}//fin funcion circulo
 function Materiales () 
-{
+{//calcula cantidad de bolsas de cemento y cal para 1 metro cuadrado de contrapiso.
 var largoTerreno;
 var achoTerreno;
 var radioTerreno;
@@ -43,4 +43,4 @@ bolsasDeCemento=parseInt(largoTerreno)*parseInt(anchoTerreno)*2;
 bolsasDeCal=parseInt(largoTerreno)*parseInt(anchoTerreno)*3;
 metroCuadrado=parseInt(largoTerreno)*parseInt(anchoTerreno);
 alert("Se necesitan "+bolsasDeCemento+" bolsas de cemento y "+bolsasDeCal+" bolsas de cal para hacer un contrapiso de "+metroCuadrado+" metros cuadrados");
-}
+}//fin funcion materiales
