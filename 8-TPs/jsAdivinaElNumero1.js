@@ -12,7 +12,6 @@ var contadorIntentos=0;
 var numeroIngresado=document.getElementById('numero').value; 
 function comenzar()
 {//Genero el número RANDOM entre 1 y 100	 
-numeroSecreto;
 alert("Puede ingresar el numero entre 1 y 100");
 }//FIN function comenzar()
 
