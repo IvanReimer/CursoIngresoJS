@@ -1,57 +1,46 @@
 function Mostrar()
 {
 
-	var contadorNegativo=0;
-	var contadorPositivo=0;
+	var contadorNegativos=0;
+	var contadorPositivos=0;
 	var contadorCeros=0;
 	var contadorPares=0
-	var cantidadPares;
 	//declarar contadores y variables 
 	var a;
 	var numeroNegativo=0;
 	var numeroPositivo=0;
-	var cantidadNegativos;
-	var cantidadPositivos;
-	var cantidadCeros;
-	var numerosPares;
 	var promedioPositivos;
 	var promedioNegativos;
 	var respuesta="si";
 while(respuesta!="no")
 {	
-	
-
 	a=prompt("Ingrese numero","0");
 	
 	if(a<0)
 	{
-		contadorNegativo--
-		numeroNegativo=numeroNegativo+parseInt(a);
-		cantidadNegativos=contadorNegativo*(-1);
-		promedioNegativos=(numeroNegativo/cantidadNegativos)*(-1);
+		contadorNegativos++
+		numeroNegativo=numeroNegativo+parseInt(a);		
+		promedioNegativos=(numeroNegativo/contadorNegativos)*(-1);
 	}
 	else
 	{
 		if(a>0)
 		{
-			contadorPositivo++
+			contadorPositivos++
 			numeroPositivo=numeroPositivo+parseInt(a);
-			cantidadPositivos=contadorPositivo;
-			promedioPositivos=numeroPositivo/cantidadPositivos;
+			promedioPositivos=numeroPositivo/contadorPositivos;
 		}
 		else
 		{
 			if(a==0)
 			{
 				contadorCeros++
-				cantidadCeros=contadorCeros;
 			}
 			else
 			{
 				if(a%2==0)
 				{
-					contadorPares++
-					cantidadPares=contadorPares;
+					contadorPares++					
 				}
 				else
 				{
@@ -64,12 +53,12 @@ while(respuesta!="no")
 var diferencia=numeroPositivo+parseInt(numeroNegativo);
 alert(numeroNegativo);
 alert(numeroPositivo);
-alert(cantidadNegativos);
-alert(cantidadPositivos);
-alert(cantidadCeros);
+alert(contadorNegativos);
+alert(contadorPositivos);
+alert(contadorCeros);
 alert(promedioPositivos);
 alert(promedioNegativos);
 alert(diferencia);
-alert(cantidadPares);
+alert(contadorPares);
 
 }//FIN DE LA FUNCIÓN
