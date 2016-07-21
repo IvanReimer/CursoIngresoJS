@@ -16,31 +16,31 @@ while(respuesta!="no")
 {	
 	a=prompt("Ingrese numero","0");
 	
-	if(a<0)
+	if(a%2==0)
 	{
-		contadorNegativos++
-		numeroNegativo=numeroNegativo+parseInt(a);		
-		promedioNegativos=(numeroNegativo/contadorNegativos)*(-1);
+		contadorPares++
 	}
 	else
 	{
-		if(a>0)
+		if(a<0)
 		{
-			contadorPositivos++
-			numeroPositivo=numeroPositivo+parseInt(a);
-			promedioPositivos=numeroPositivo/contadorPositivos;
+			contadorNegativos++
+			numeroNegativo=numeroNegativo+parseInt(a);		
+			promedioNegativos=(numeroNegativo/contadorNegativos)*(-1);
 		}
 		else
 		{
-			if(a==0)
+			if(a>0)
 			{
-				contadorCeros++
+				contadorPositivos++
+				numeroPositivo=numeroPositivo+parseInt(a);
+				promedioPositivos=numeroPositivo/contadorPositivos;
 			}
 			else
 			{
-				if(a%2==0)
+				if(a==0)
 				{
-					contadorPares++					
+					contadorCeros++
 				}
 				else
 				{
