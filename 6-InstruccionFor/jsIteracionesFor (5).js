@@ -1,6 +1,7 @@
 function Mostrar()
 {
-
+var numero;
+for(;numero=prompt('ingresa numero');)
 
 
 
