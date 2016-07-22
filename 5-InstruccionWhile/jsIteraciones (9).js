@@ -1,4 +1,5 @@
 function Mostrar()
+//pide q ingreses numeros y que muestres cual es el mas alto y mas bajo.
 {
 	var contador=0;
 	// declarar variables

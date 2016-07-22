@@ -46,5 +46,5 @@ while(respuesta!="no")
 var diferencia=sumaPositivos+parseInt(sumaNegativos);
 promedioNegativos=(sumaNegativos/contadorNegativos)*(-1);
 promedioPositivos=sumaPositivos/contadorPositivos;
-document.write("1)- Suma de negativos: "+sumaNegativos+" 2)- Suma de positivos: "+sumaPositivos+" 3)- Cantidad de positivos: "+contadorPositivos+" 4)- Cantidad de negativos: "+contadorNegativos+" 5)- Cantidad de ceros: "+contadorCeros+" 6)- Cantidad de numeros pares: "+contadorPares+" 7)- Promedio de los positivos: "+promedioPositivos+" 8)- Promedio de los negativos: "+promedioNegativos+" 9)- Diferencia entre positivos y negativos: "+diferencia);
+document.write("1)- Suma de negativos: "+sumaNegativos+"<br>"+" 2)- Suma de positivos: "+sumaPositivos+"<br>"+" 3)- Cantidad de positivos: "+contadorPositivos+"<br>"+" 4)- Cantidad de negativos: "+contadorNegativos+"<br>"+" 5)- Cantidad de ceros: "+contadorCeros+"<br>"+" 6)- Cantidad de numeros pares: "+contadorPares+"<br>"+" 7)- Promedio de los positivos: "+promedioPositivos+"<br>"+" 8)- Promedio de los negativos: "+promedioNegativos+"<br>"+" 9)- Diferencia entre positivos y negativos: "+diferencia);
 }//FIN DE LA FUNCIÓN
