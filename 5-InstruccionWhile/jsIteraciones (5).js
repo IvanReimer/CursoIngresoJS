@@ -20,8 +20,8 @@ while(personas<10)
            {
               sexo=prompt("Ingrese su sexo nuevamente","f o m");
            }
-           
-  sumaNota=sumaNota+parseInt(nota);
+           nota=parseInt(nota)
+  sumaNota=sumaNota+nota;
 
          if(nota<=notaMin)
             {
