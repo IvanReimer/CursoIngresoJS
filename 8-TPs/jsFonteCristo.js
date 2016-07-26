@@ -9,19 +9,27 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 function ComenzarIngreso () 
 {
-var numero=prompt("Ingrese un numero positivo","1");
-while(numero<1)
+var numero=document.getElementById('numero').value;
+while(numero<0)
 {
-	numero=prompt("Se le pidio que sea positivo ( mayor o igual a 1 ).","1")
+	alert("Se le pidio que sea positivo ( mayor o igual a 0 ).");
 }//FIN PRIMER WHILE
 numero=parseInt(numero);
-var comparador=0;
+var numPares=0;
+var numImpares=0;
 var contador=0;
-while(comparador<numero)
+while(numPares<numero)
 {
-	comparador%2==0;
-	comparador++;
-
+	if(numPares%2==0)
+	{		
+		numPares++;
+	}
+	else
+	{
+		numImpares++;
+	}
+	
+	contador++;
 }//FIN SEGUNDO WHILE.
-
+alert("La cantidad de números pares es: "+numPares+" La cantidad de números impares es: "+numImpares+" La cantidad de ")
 }//FIN FUNCION INGRESO.

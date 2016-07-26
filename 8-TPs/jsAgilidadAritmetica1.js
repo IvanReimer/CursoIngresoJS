@@ -39,16 +39,20 @@ document.getElementById('Operador').value=operacion;
 function Responder()
 {
 var Respuesta=document.getElementById('Respuesta').value;
+
 if(respuesta!=Respuesta)
 {
 	alert("ERROR, INTENTE DE NUEVO");
+	document.getElementById('Respuesta').value="";
 }
 else
 {
-	alert("¡GANO!");
+	alert("¡GANO!");	
+	document.getElementById('Respuesta').value="";
+	return comenzar();
 
 }
-return comenzar();
+
 
 
 }//FIN DE LA FUNCIÓN
