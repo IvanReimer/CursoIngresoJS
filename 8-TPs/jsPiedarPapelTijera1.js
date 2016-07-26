@@ -43,7 +43,7 @@ function piedra()
 			alert("Ganaste");
 		}
 	}
-	
+	return comenzar();
 }//FIN DE LA FUNCIÓN
 function papel()
 {
@@ -64,12 +64,12 @@ if(eleccionMaquina=="papel")
 		}
 	}
 
-
+	return comenzar();
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-eleccionPersona="tijera";
-if(eleccionMaquina=="piedra")
+	eleccionPersona="tijera";
+	if(eleccionMaquina=="piedra")
 	{
 		alert("Perdiste");
 	}
@@ -84,5 +84,5 @@ if(eleccionMaquina=="piedra")
 			alert("Empate");
 		}
 	}
-
+	return comenzar();
 }//FIN DE LA FUNCIÓN

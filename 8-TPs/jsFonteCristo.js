@@ -9,5 +9,19 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 function ComenzarIngreso () 
 {
- 	
-}
+var numero=prompt("Ingrese un numero positivo","1");
+while(numero<1)
+{
+	numero=prompt("Se le pidio que sea positivo ( mayor o igual a 1 ).","1")
+}//FIN PRIMER WHILE
+numero=parseInt(numero);
+var comparador=0;
+var contador=0;
+while(comparador<numero)
+{
+	comparador%2==0;
+	comparador++;
+
+}//FIN SEGUNDO WHILE.
+
+}//FIN FUNCION INGRESO.

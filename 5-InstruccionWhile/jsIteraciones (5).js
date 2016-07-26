@@ -1,11 +1,13 @@
 function Mostrar()
 {
-/*var sexo;
+var sexo;
 while(sexo!='f'&&sexo!='m')
 {
 	sexo=prompt("ingrese f ó m .")	
 }//FIN WHILE
-document.getElementById('Sexo').value=sexo;*/
+document.getElementById('Sexo').value=sexo;
+/*
+// ESTE ES UN EJERCICIO DEL PARCIAL!!!
 var personas=0,nota,sexo,sumaNota=0,promedioNota,notaMin=10,cantVarones=0;
 while(personas<10)
 {
@@ -38,5 +40,5 @@ while(personas<10)
 }
 promedioNota=sumaNota/personas;
 alert("El promedio de las notas es: "+promedioNota+" La nota mas baja es: "+notaMin+" La cantidad de varones con nota mayor igual a 6 es: "+cantVarones);
-
+*/
 }//FIN DE LA FUNCIÓN
