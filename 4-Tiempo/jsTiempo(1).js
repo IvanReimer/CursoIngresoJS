@@ -7,9 +7,8 @@ function inicio()
 	
 }//FIN DE LA FUNCIÓN inicio
 
-function SegundosEnElAire() {
-
+function SegundosEnElAire() 
+{
     alert("Bienvenido a la UTN FRA");
-
 }//FIN DE LA FUNCIÓN SegundosEnElAire
 

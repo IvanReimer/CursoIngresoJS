@@ -12,7 +12,7 @@ function SegundosEnElAire() {
 
 	contador=contador +1;
     alert("Bienvenido a la UTN FRA, cantidad ="+contador);
-    if (contador==5)
+    while(contador>=5)
     {
     	clearInterval(miIntervalo);
     }
