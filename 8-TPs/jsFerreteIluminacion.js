@@ -92,11 +92,14 @@ switch(marca)
 	break;
 }//switch(marca)
 var precioNeto=precioBruto*descuento;
+var impuesto;
+var precioFinal;
 if(precioNeto>120)
 {
-	precioNeto=parseInt(precioNeto)+parseInt(precioNeto*0.10);
-	document.getElementById('precioDescuento').value=precioNeto;
-	alert("Se le agrega el impuesto: "+parseInt(precioNeto*0.10));
+	impuesto=precioNeto*0.10;
+	precioFinal=precioNeto+impuesto;
+	document.getElementById('precioDescuento').value=precioFinal;
+	alert("IIBB usted pagó: "+precioNeto+" siendo "+impuesto+" el impuesto que se suma");
 }
 else
 {
