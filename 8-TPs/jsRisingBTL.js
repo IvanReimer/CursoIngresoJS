@@ -10,46 +10,50 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
 function ComenzarIngreso () 
 {
 var edad=prompt("Ingrese edad","De 18 a 90");
-while(edad<18||edad>90)
+while(isNaN(edad)||edad<18||edad>90)
 {
-	edad=prompt("Ingrese edad","De 18 a 90 se aclaro");
+	edad=prompt("Error, ingrese edad de 18 a 90 años","90");
 }// FIN WHILE PARA EDAD
 document.getElementById('Edad').value=edad;
 var sexo=prompt("Ingrese sexo","f o m");
 while(sexo!="f"&&sexo!="m")
 {
-	sexo=prompt("Ingrese sexo","f o m se aclaro");
+	sexo=prompt("Error. Ingrese sexo","f o m");
 }// FIN WHILE PARA SEXO
 document.getElementById('Sexo').value=sexo;
 var estadoCivil=prompt("Ingrese estado civil","1-solero, 2-casado, 3-soltero, 4-viudos");
+while(isNaN(estadoCivil)||estadoCivil<1||estadoCivil>4)
+{
+	estadoCivil=prompt("Error. Ingrese estado civil","1-solero, 2-casado, 3-soltero, 4-viudos");
+}
+estadoCivil=parseInt(estadoCivil);
 switch(estadoCivil)
 {
 	case 1:
-	"Soltero";
+	estadoCivil="Soltero";
 	break;
 	case 2:
-	"Casado";
+	estadoCivil="Casado";
 	break;
 	case 3:
-	"Divorciado";
+	estadoCivil="Divorciado";
 	break;
 	case 4:
-	"Viudo";
+	estadoCivil="Viudo";
+	break;
+	default:
+	estadoCivil="ERROR";
 	break;
 }//FIN SWITCH ESTADO CIVIL
-while(estadoCivil<1||estadoCivil>4)
-{
-	estadoCivil=prompt("Ingrese estado civil","1-solero, 2-casado, 3-soltero, 4-viudos");
-}
 document.getElementById('EstadoCivil').value=estadoCivil;
 var sueldoBruto=prompt("Ingrese su sueldo bruto","8000 en adelante");
-while(sueldoBruto<8000)
+while(isNaN(sueldoBruto)||sueldoBruto<8000)
 {
-	sueldoBruto=prompt("Ingrese su sueldo bruto","8000 en adelante");
+	sueldoBruto=prompt("Error. Ingrese su sueldo bruto","8000 en adelante");
 }
 document.getElementById('Sueldo').value=sueldoBruto;
 var legajo=prompt("Ingrese su legajo","1234");
-while(legajo>9999||legajo<1000)
+while(isNaN(legajo)||legajo>9999||legajo<1000)
 {
 	legajo=prompt("Ingrese su legajo","1234");
 }
