@@ -1,14 +1,20 @@
 function Mostrar()
 {
-var a;
+
 var b=prompt('Ingresa numero');
+p=parseInt(b);
+var cantPares=0;
+var numPar="";
 var contador;
-for(a=0;a<=b;a++)
+for(contador=0;contador<=b;contador++)
 {
-	alert(a);
-	b=parseInt(b);
-	alert(b/a);
+	if(contador%2==0)
+	{
+		cantPares++;
+		numPar=numPar+contador+" , ";
+	}
 }
+alert(cantPares+"Y los numeros son: "+numPar);
 
 
 

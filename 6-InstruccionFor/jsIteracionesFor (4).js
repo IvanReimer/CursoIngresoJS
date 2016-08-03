@@ -1,9 +1,10 @@
 function Mostrar()
 {
 var i;
-for(i=0;i<10;i++)
+for(i=0;true;i++)
 {
-	if(Mostrar()==i)
+	alert(i);
+	if(i==Mostrar())
 	{
 		break;
 	}
