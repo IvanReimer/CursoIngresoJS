@@ -8,13 +8,13 @@ var numPar="";
 var contador;
 for(contador=0;contador<=b;contador++)
 {
-	if(contador%2==0)
+	if(contador%2==0&&contador!=0)
 	{
 		cantPares++;
-		numPar=numPar+contador+" , ";
+		numPar=numPar+" "+contador;
 	}
 }
-alert(cantPares+"Y los numeros son: "+numPar);
+alert(cantPares+" y los numeros son: "+numPar+".");
 
 
 
